@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from pbb-by-badboy.web.app/10pat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 May 2024 17:43:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <base target="_top">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&amp;display=swap" rel="stylesheet">
+  
+
+
+  <style>
+    body {
+      font-family: arial;
+      background-color: #031d38;
+      max-width: 60rem;
+      margin: 0 auto;
+    }
+.containern {
+  display: flex;
+}
+
+.scoret{
+
+ background-color: green;
+ border-radius: 0px;
+
+}
+
+
+
+
+
+
+
+    table {
+      border-collapse: collapse;
+	  background-color: #abdbe3;
+	  margin-right: 30px; /* ระยะห่างระหว่างตาราง */
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid gray;
+    }
+
+    td {
+      width: 21px;
+      height: 22px;
+    }
+
+    .result {
+      display: inline-block;
+      width: 31%;
+    }
+
+    .button {
+      padding: 20px  50px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+     outline: none;
+      color: #fff;
+     border: none;
+      border-radius: 15px;
+     
+    }
+
+    .pic {
+
+      min-width: 40px;
+      max-width: 60px;
+
+
+    }
+
+
+
+
+    .player {
+      background-color: blue;
+    }
+
+    .banker {
+      background-color: red;
+    }
+
+    .oo {
+	
+      background-color: gray;
+    }
+
+    .tie {
+	padding: 20px  40px;
+      background-color: green;
+    }
+
+    .button:active {
+      box-shadow: 0 2px #666;
+      transform: translateY(4px);
+    }
+
+    .winlose {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 12px;
+      width: 18px;
+      height: 18px;
+      border-radius: 18px;
+    }
+
+    .win {
+      background-color: green;
+      color: white;
+    }
+
+    .lose {
+      background-color: red;
+      color: white;
+    }
+
+    .score {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      width: 18px;
+      height: 18px;
+      border-radius: 18px;
+    }
+
+    .p {
+      background-color: blue;
+    }
+
+    .b {
+      background-color: red;
+    }
+
+    .t {
+      background-color: green;
+	   border-radius: 1px;
+    }
+
+    .red {
+      color: red;
+      
+    }
+    banh {
+      font-size: 50px;
+    }
+  </style>
+
+</head>
+
+<body  >
+  
+<br>
+   
+
+  
+    <br>
+	<div class="container">
+	<div class="containern" >
+	<div id="road1table">
+      <table style="table-layout: fixed;width:100px;" id="tblroad1">
+        
+        <tbody>
+          <tr>
+		    
+            <td id="road1_1" valign="middle"></td>
+            <td id="road1_11" valign="middle"></td>
+            <td id="road1_21" valign="middle"></td>
+            <td id="road1_31" valign="middle"></td>
+			</tr>
+			<tr>
+			
+            <td id="road1_2" valign="middle"></td>
+            <td id="road1_12" valign="middle"></td>
+            <td id="road1_22" valign="middle"></td>
+            <td id="road1_32" valign="middle"></td>
+			</tr>
+			<tr>
+            <td id="road1_3" valign="middle"></td>
+            <td id="road1_13" valign="middle"></td>
+            <td id="road1_23" valign="middle"></td>
+            <td id="road1_33" valign="middle"></td>
+			</tr>
+			<tr>
+            <td id="road1_4" valign="middle"></td>
+            <td id="road1_14" valign="middle"></td>
+            <td id="road1_24" valign="middle"></td>
+            <td id="road1_34" valign="middle"></td>
+			</tr>
+			<tr>
+            <td id="road1_5" valign="middle"></td>
+            <td id="road1_15" valign="middle"></td>
+            <td id="road1_25" valign="middle"></td>
+            <td id="road1_35" valign="middle"></td>
+			</tr>
+			<tr>
+            <td id="road1_6" valign="middle"></td>
+            <td id="road1_16" valign="middle"></td>
+            <td id="road1_26" valign="middle"></td>
+            <td id="road1_36" valign="middle"></td>
+			</tr>
+			<tr>
+            <td id="road1_7" valign="middle"></td>
+            <td id="road1_17" valign="middle"></td>
+            <td id="road1_27" valign="middle"></td>
+            <td id="road1_37" valign="middle"></td>
+			</tr>
+			<tr>
+            <td id="road1_8" valign="middle"></td>
+            <td id="road1_18" valign="middle"></td>
+            <td id="road1_28" valign="middle"></td>
+            <td id="road1_38" valign="middle"></td>
+			</tr>
+			<tr>
+			<td id="road1_9" valign="middle"></td>
+            <td id="road1_19" valign="middle"></td>
+			<td id="road1_29" valign="middle"></td>
+            <td id="road1_39" valign="middle"></td>
+			</tr>
+			<tr>
+            <td id="road1_10" valign="middle"></td>
+            <td id="road1_20" valign="middle"></td>
+			<td id="road1_30" valign="middle"></td>
+            <td id="road1_40" valign="middle"></td>
+					
+			
+          </tr>
+          
+        </tbody>
+		
+		
+		
+		
+      </table>
+
+    </div>
+	<div id="road2table">
+      <table style="table-layout: fixed;width:100px; background-color: white;" id="tblroad2">
+        
+        <tbody>
+          <tr>
+		    
+            <td id="road2_11"  class="scoret" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_12" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_13" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_14" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+			
+            <td id="road2_21" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_22" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_23" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_24" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+            <td id="road2_31" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_32" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_33" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_34" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+            <td id="road2_41" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_42" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_43" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_44" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+            <td id="road2_51" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_52" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_53" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_54" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+            <td id="road2_61" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_62" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_63" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_64" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+            <td id="road2_71" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_72" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_73" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_74" valign="middle"><div class="score p"><div>P</div></div></td>
+			</tr>
+			<tr>
+            <td id="road2_81" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_82" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_83" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_84" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+			<td id="road2_91" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_92" valign="middle"><div class="score b"><div>B</div></div></td>
+			<td id="road2_93" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_94" valign="middle"><div class="score b"><div>B</div></div></td>
+			</tr>
+			<tr>
+            <td id="road2_101" valign="middle"><div class="score b"><div>B</div></div></td>
+            <td id="road2_102" valign="middle"><div class="score p"><div>P</div></div></td>
+			<td id="road2_103" valign="middle"><div class="score p"><div>P</div></div></td>
+            <td id="road2_104" valign="middle"><div class="score b"><div>B</div></div></td>
+					
+			
+          </tr>
+          
+        </tbody>
+		
+		
+		
+		
+      </table>
+
+    </div>
+	
+	
+	
+	
+	
+  </div>
+  <br>
+  <div id="betting"  style="margin-left: 65px" ><img style= "fixed;width:100px;"src="pic/sp.png"></img></div>
+    <br>
+    <div id="button" style= "fixed;width:700px;">
+      <button class="button player" onclick="insert('P')">P</button>
+      <button class="button banker" onclick="insert('B')">B</button>
+	   </div><br>
+     <div id="button"   style= "fixed;width:100px; margin-left: 30px">
+      
+      <button class="button oo" onclick="location.reload()">RESET</button>
+   
+    </div>
+
+
+  
+    
+ 
+	<br>
+	<div style="color: white">
+    <div>วิธีใช้งาน</div>
+    <div>เลือกห้องที่สกอร์ ล่าสุดเป็น PBP</div>
+	<div>ตัวเล่นตัวแรกคือ P</div>
+	<div>ผิดติด 4 ไม้ ให้ยอม</div>
+    <div>ชนะ 10  ให้พอ</div>
+	<div></div>
+	<img style= "fixed;width:500px;"src="pic/g1.jpg">
+	
+	<br>
+<a href="https://www.lotto77.in/affliate/TFQ3NzEwMDMzNTE1"><img style= "fixed;width:500px;"src="pic/77LOTTO.gif"></a><br>
+<a href="https://lotto432.tv/affliate/TFQ0MzIxMDAxNjQzOA=="><img style= "fixed;width:500px;"src="pic/lotto432.gif"></a><br>
+    <br>
+ <h3>  เวปสูตรอื่นๆ</h3>
+
+<a href="https://badoyweb-2.web.app/" >ตามสวนไม้ขีด</a><br>
+<a href="https://pat-by-badboy.web.app/" >ใส่แพททเทรินเอง</a><br>
+<a href="https://badboyweb1-c782a.firebaseapp.com/" >DNA ผีบอก </a><br>
+<a href="https://pracha-sd.web.app/" >ทริค  PRACHA</a><br>
+<a href="https://technicianlab-lt.blogspot.com/2018/07/dna.html" >นายหัว</a><br>
+<a href="https://trickpeeau.web.app/" >ทริคจดแต้มพี่อู๋</a><br>
+<a href="https://trickjai-app.web.app/" >ทริคจดแต้ม ใจ</a><br>
+<a href="https://patfive-badboy.web.app/" >PAT5</a><br>
+</div>
+
+ </div>
+
+<br>
+
+
+
+
+
+    
+  
+
+
+
+  
+  
+
+ 
+
+  
+  
+  
+  
+</body>
+
+
+
+
+
+
+
+
+<script>
+  
+var pbarray = [];
+var pbtarray = [];
+
+var betp='<img style= "fixed;width:100px;"src="pic/sp.png"></img>';
+var betb='<img style= "fixed;width:100px;"src="pic/sb.png"></img>';
+var playerbead = '<div class="score p"><div>P</div></div>';
+var bankerbead = '<div class="score b"><div>B</div></div>';
+var tiebead = '<div class="score t"><div>T</div></div>';
+var win = '<div class="winlose win"><div>&#10003;</div></div>';
+var lose = '<div class="winlose lose"><div>&#10007;</div></div>';
+var blank = '<div class="winlose"><div>-</div></div>';
+var pbwl = [];
+var fnumber=[];
+var rnumber=[];
+var bet=["P"];
+var numbet=[]
+var betbet=["A","A","A","A","A","A","A","A","A","A","A","P","B","P","B","B","P","P","B","P","B","B","P","P","B","P","B","B","B","B","P","P","B","B","B","B","P","P","B","B","B","B","P","P","B","B","B","P","B","B","B","B","B","P","B","B","B","P","B","P","B","B","B","P","B","P","B","B","P","B","B","P","B","B","P","B","B","P","B","B","B","B","B","P","B","B","B","P","B","B","P","B","B","P","B","B","P","P","B","B","B","B","P","P","B"]
+function undo(){
+for( i = 1 ; i <= pbtarray.length ; i++ ){
+document.getElementById("road1_"+i).innerHTML = "";
+}
+
+if( pbtarray[pbtarray.length-1] === "T" ){
+ pbtarray.pop();
+}else{
+ pbtarray.pop();
+ pbarray.pop();
+ }
+
+insert("C");
+}
+
+
+
+function insert(bet){
+if(pbtarray.length < (16*6)){
+if(bet != "C"){
+pbtarray.push(bet);
+if( bet != "T" ){
+ pbarray.push(bet);
+}
+}
+
+
+
+for( i = 1 ; i <= pbtarray.length ; i++ ){
+switch (pbtarray[i-1]) {
+case "P":
+ document.getElementById("road1_"+i).innerHTML = playerbead;
+
+ break;
+case "B":
+ document.getElementById("road1_"+i).innerHTML = bankerbead;
+
+ break;
+case "T":
+ document.getElementById("road1_"+i).innerHTML = tiebead;
+ break;
+}
+}
+
+
+
+
+}
+
+wl()
+wl2()
+}
+
+
+
+
+
+
+
+function wl(){
+
+fnumber=[10]
+rnumber=[1]
+numbet=[]
+pbwl=[]
+bet=["P"]
+
+for( i = 1 ; i <= pbtarray.length ; i++ ){
+
+
+//bet=["P"]
+if(pbtarray[i-1]=== bet[i-1]){
+
+
+pbwl.push("W");
+
+fnumber.push(fnumber[i-1]+10);
+rnumber.push(1);
+
+
+
+numbet.push(fnumber[i]+rnumber[i]);
+bet.push(betbet[numbet[i-1]]);
+
+}
+else if( pbtarray[i-1]!= bet[i-1]){
+pbwl.push("L")
+fnumber.push(fnumber[i-1])
+rnumber.push(rnumber[i-1]+1);
+numbet.push(fnumber[i]+rnumber[i])
+bet.push(betbet[numbet[i-1]])
+}
+if(bet[i]==="P" ){
+
+document.getElementById("betting").innerHTML = betp
+
+
+}
+if(bet[i]==="B" ){
+document.getElementById("betting").innerHTML = betb
+}
+
+
+
+
+
+
+
+}
+
+//document.getElementById("road2_" + jj).innerHTML = bankerbead;
+
+console.log(i)
+console.log(pbwl)
+console.log(pbtarray)
+console.log(fnumber)
+console.log(rnumber)
+console.log(numbet)
+console.log(bet)
+
+
+
+
+
+}
+
+
+function wl2(){
+
+for( i = 1 ; i <= numbet.length ; i++ ){
+
+var jj =numbet[i-1]
+document.getElementById("road2_" + jj).classList.add("scoret");
+
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+<!-- Mirrored from pbb-by-badboy.web.app/10pat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 May 2024 17:43:19 GMT -->
+</html>

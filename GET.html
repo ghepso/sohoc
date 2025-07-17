@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from pbb-by-badboy.web.app/GET by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 May 2024 17:43:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <base target="_top">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&amp;display=swap" rel="stylesheet">
+  
+<meta charset- "UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title> PBB BY BADBOY</title>
+  
+
+
+  <style>
+    body {
+    font-family: 'Kanit', sans-serif;
+   
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid gray;
+    }
+
+    td {
+      width: 21px;
+      height: 21px;
+    }
+
+    .result {
+      display: inline-block;
+      width: 31%;
+    }
+
+    .button {
+      padding: 20px  70px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      outline: none;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+
+    }
+
+    .pic {
+
+      min-width: 40px;
+      max-width: 60px;
+
+
+    }
+
+
+
+
+    .player {
+      background-color: blue;
+    }
+
+    .banker {
+      background-color: red;
+    }
+
+    .oo {
+	padding: 20px  30px;
+	font-size: 20px;
+      background-color: gray;
+    }
+
+    .tie {
+	padding: 20px  40px;
+      background-color: green;
+    }
+    .button:active {
+      box-shadow: 0 2px #666;
+      transform: translateY(4px);
+    }
+
+    .winlose {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 12px;
+      width: 18px;
+      height: 18px;
+      border-radius: 18px;
+    }
+
+    .win {
+      background-color: green;
+      color: white;
+    }
+
+    .lose {
+      background-color: red;
+      color: white;
+    }
+
+    .score {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      width: 18px;
+      height: 18px;
+      border-radius: 18px;
+    }
+
+    .p {
+      background-color: blue;
+    }
+
+    .b {
+      background-color: red;
+    }
+
+    .t {
+      background-color: green;
+    }
+
+    .red {
+      color: red;
+      
+    }
+    banh {
+      font-size: 50px;
+    }
+  </style>
+
+</head>
+
+<body  >
+  
+<br>
+   
+
+  <div class="container-fluid">
+    
+
+    
+    
+  
+    <div    id="beadroadtable">
+      <table style="table-layout: fixed;width:673px; id="tblbeadroad">
+        <colgroup>
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td id="beadroad_1" valign="middle"></td>
+            <td id="beadroad_7" valign="middle"></td>
+            <td id="beadroad_13" valign="middle"></td>
+            <td id="beadroad_19" valign="middle"></td>
+            <td id="beadroad_25" valign="middle"></td>
+            <td id="beadroad_31" valign="middle"></td>
+            <td id="beadroad_37" valign="middle"></td>
+            <td id="beadroad_43" valign="middle"></td>
+            <td id="beadroad_49" valign="middle"></td>
+            <td id="beadroad_55" valign="middle"></td>
+            <td id="beadroad_61" valign="middle"></td>
+            <td id="beadroad_67" valign="middle"></td>
+            <td id="beadroad_73" valign="middle"></td>
+            <td id="beadroad_79" valign="middle"></td>
+            <td id="beadroad_85" valign="middle"></td>
+            <td id="beadroad_91" valign="middle"></td>
+            <td id="beadroad_97" valign="middle"></td>
+            <td id="beadroad_103" valign="middle"></td>
+            <td id="beadroad_109" valign="middle"></td>
+            <td id="beadroad_115" valign="middle"></td>
+            <td id="beadroad_121" valign="middle"></td>
+            <td id="beadroad_127" valign="middle"></td>
+            <td id="beadroad_133" valign="middle"></td>
+            <td id="beadroad_139" valign="middle"></td>
+            <td id="beadroad_145" valign="middle"></td>
+            <td id="beadroad_151" valign="middle"></td>
+            <td id="beadroad_157" valign="middle"></td>
+            <td id="beadroad_163" valign="middle"></td>
+            <td id="beadroad_169" valign="middle"></td>
+            <td id="beadroad_175" valign="middle"></td>
+            <td id="beadroad_181" valign="middle"></td>
+            <td id="beadroad_187" valign="middle"></td>
+          </tr>
+          <tr>
+            <td id="beadroad_2" valign="middle"></td>
+            <td id="beadroad_8" valign="middle"></td>
+            <td id="beadroad_14" valign="middle"></td>
+            <td id="beadroad_20" valign="middle"></td>
+            <td id="beadroad_26" valign="middle"></td>
+            <td id="beadroad_32" valign="middle"></td>
+            <td id="beadroad_38" valign="middle"></td>
+            <td id="beadroad_44" valign="middle"></td>
+            <td id="beadroad_50" valign="middle"></td>
+            <td id="beadroad_56" valign="middle"></td>
+            <td id="beadroad_62" valign="middle"></td>
+            <td id="beadroad_68" valign="middle"></td>
+            <td id="beadroad_74" valign="middle"></td>
+            <td id="beadroad_80" valign="middle"></td>
+            <td id="beadroad_86" valign="middle"></td>
+            <td id="beadroad_92" valign="middle"></td>
+            <td id="beadroad_98" valign="middle"></td>
+            <td id="beadroad_104" valign="middle"></td>
+            <td id="beadroad_110" valign="middle"></td>
+            <td id="beadroad_116" valign="middle"></td>
+            <td id="beadroad_122" valign="middle"></td>
+            <td id="beadroad_128" valign="middle"></td>
+            <td id="beadroad_134" valign="middle"></td>
+            <td id="beadroad_140" valign="middle"></td>
+            <td id="beadroad_146" valign="middle"></td>
+            <td id="beadroad_152" valign="middle"></td>
+            <td id="beadroad_158" valign="middle"></td>
+            <td id="beadroad_164" valign="middle"></td>
+            <td id="beadroad_170" valign="middle"></td>
+            <td id="beadroad_176" valign="middle"></td>
+            <td id="beadroad_182" valign="middle"></td>
+            <td id="beadroad_188" valign="middle"></td>
+          </tr>
+          <tr>
+            <td id="beadroad_3" valign="middle"></td>
+            <td id="beadroad_9" valign="middle"></td>
+            <td id="beadroad_15" valign="middle"></td>
+            <td id="beadroad_21" valign="middle"></td>
+            <td id="beadroad_27" valign="middle"></td>
+            <td id="beadroad_33" valign="middle"></td>
+            <td id="beadroad_39" valign="middle"></td>
+            <td id="beadroad_45" valign="middle"></td>
+            <td id="beadroad_51" valign="middle"></td>
+            <td id="beadroad_57" valign="middle"></td>
+            <td id="beadroad_63" valign="middle"></td>
+            <td id="beadroad_69" valign="middle"></td>
+            <td id="beadroad_75" valign="middle"></td>
+            <td id="beadroad_81" valign="middle"></td>
+            <td id="beadroad_87" valign="middle"></td>
+            <td id="beadroad_93" valign="middle"></td>
+            <td id="beadroad_99" valign="middle"></td>
+            <td id="beadroad_105" valign="middle"></td>
+            <td id="beadroad_111" valign="middle"></td>
+            <td id="beadroad_117" valign="middle"></td>
+            <td id="beadroad_123" valign="middle"></td>
+            <td id="beadroad_129" valign="middle"></td>
+            <td id="beadroad_135" valign="middle"></td>
+            <td id="beadroad_141" valign="middle"></td>
+            <td id="beadroad_147" valign="middle"></td>
+            <td id="beadroad_153" valign="middle"></td>
+            <td id="beadroad_159" valign="middle"></td>
+            <td id="beadroad_165" valign="middle"></td>
+            <td id="beadroad_171" valign="middle"></td>
+            <td id="beadroad_177" valign="middle"></td>
+            <td id="beadroad_183" valign="middle"></td>
+            <td id="beadroad_189" valign="middle"></td>
+          </tr>
+          <tr>
+            <td id="beadroad_4" valign="middle"></td>
+            <td id="beadroad_10" valign="middle"></td>
+            <td id="beadroad_16" valign="middle"></td>
+            <td id="beadroad_22" valign="middle"></td>
+            <td id="beadroad_28" valign="middle"></td>
+            <td id="beadroad_34" valign="middle"></td>
+            <td id="beadroad_40" valign="middle"></td>
+            <td id="beadroad_46" valign="middle"></td>
+            <td id="beadroad_52" valign="middle"></td>
+            <td id="beadroad_58" valign="middle"></td>
+            <td id="beadroad_64" valign="middle"></td>
+            <td id="beadroad_70" valign="middle"></td>
+            <td id="beadroad_76" valign="middle"></td>
+            <td id="beadroad_82" valign="middle"></td>
+            <td id="beadroad_88" valign="middle"></td>
+            <td id="beadroad_94" valign="middle"></td>
+            <td id="beadroad_100" valign="middle"></td>
+            <td id="beadroad_106" valign="middle"></td>
+            <td id="beadroad_112" valign="middle"></td>
+            <td id="beadroad_118" valign="middle"></td>
+            <td id="beadroad_124" valign="middle"></td>
+            <td id="beadroad_130" valign="middle"></td>
+            <td id="beadroad_136" valign="middle"></td>
+            <td id="beadroad_142" valign="middle"></td>
+            <td id="beadroad_148" valign="middle"></td>
+            <td id="beadroad_154" valign="middle"></td>
+            <td id="beadroad_160" valign="middle"></td>
+            <td id="beadroad_166" valign="middle"></td>
+            <td id="beadroad_172" valign="middle"></td>
+            <td id="beadroad_178" valign="middle"></td>
+            <td id="beadroad_184" valign="middle"></td>
+            <td id="beadroad_190" valign="middle"></td>
+          </tr>
+          <tr>
+            <td id="beadroad_5" valign="middle"></td>
+            <td id="beadroad_11" valign="middle"></td>
+            <td id="beadroad_17" valign="middle"></td>
+            <td id="beadroad_23" valign="middle"></td>
+            <td id="beadroad_29" valign="middle"></td>
+            <td id="beadroad_35" valign="middle"></td>
+            <td id="beadroad_41" valign="middle"></td>
+            <td id="beadroad_47" valign="middle"></td>
+            <td id="beadroad_53" valign="middle"></td>
+            <td id="beadroad_59" valign="middle"></td>
+            <td id="beadroad_65" valign="middle"></td>
+            <td id="beadroad_71" valign="middle"></td>
+            <td id="beadroad_77" valign="middle"></td>
+            <td id="beadroad_83" valign="middle"></td>
+            <td id="beadroad_89" valign="middle"></td>
+            <td id="beadroad_95" valign="middle"></td>
+            <td id="beadroad_101" valign="middle"></td>
+            <td id="beadroad_107" valign="middle"></td>
+            <td id="beadroad_113" valign="middle"></td>
+            <td id="beadroad_119" valign="middle"></td>
+            <td id="beadroad_125" valign="middle"></td>
+            <td id="beadroad_131" valign="middle"></td>
+            <td id="beadroad_137" valign="middle"></td>
+            <td id="beadroad_143" valign="middle"></td>
+            <td id="beadroad_149" valign="middle"></td>
+            <td id="beadroad_155" valign="middle"></td>
+            <td id="beadroad_161" valign="middle"></td>
+            <td id="beadroad_167" valign="middle"></td>
+            <td id="beadroad_173" valign="middle"></td>
+            <td id="beadroad_179" valign="middle"></td>
+            <td id="beadroad_185" valign="middle"></td>
+            <td id="beadroad_191" valign="middle"></td>
+          </tr>
+          <tr>
+            <td id="beadroad_6" valign="middle"></td>
+            <td id="beadroad_12" valign="middle"></td>
+            <td id="beadroad_18" valign="middle"></td>
+            <td id="beadroad_24" valign="middle"></td>
+            <td id="beadroad_30" valign="middle"></td>
+            <td id="beadroad_36" valign="middle"></td>
+            <td id="beadroad_42" valign="middle"></td>
+            <td id="beadroad_48" valign="middle"></td>
+            <td id="beadroad_54" valign="middle"></td>
+            <td id="beadroad_60" valign="middle"></td>
+            <td id="beadroad_66" valign="middle"></td>
+            <td id="beadroad_72" valign="middle"></td>
+            <td id="beadroad_78" valign="middle"></td>
+            <td id="beadroad_84" valign="middle"></td>
+            <td id="beadroad_90" valign="middle"></td>
+            <td id="beadroad_96" valign="middle"></td>
+            <td id="beadroad_102" valign="middle"></td>
+            <td id="beadroad_108" valign="middle"></td>
+            <td id="beadroad_114" valign="middle"></td>
+            <td id="beadroad_120" valign="middle"></td>
+            <td id="beadroad_126" valign="middle"></td>
+            <td id="beadroad_132" valign="middle"></td>
+            <td id="beadroad_138" valign="middle"></td>
+            <td id="beadroad_144" valign="middle"></td>
+            <td id="beadroad_150" valign="middle"></td>
+            <td id="beadroad_156" valign="middle"></td>
+            <td id="beadroad_162" valign="middle"></td>
+            <td id="beadroad_168" valign="middle"></td>
+            <td id="beadroad_174" valign="middle"></td>
+            <td id="beadroad_180" valign="middle"></td>
+            <td id="beadroad_186" valign="middle"></td>
+            <td id="beadroad_192" valign="middle"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <div id="betting"></div>
+    <br>
+    <div id="button" style= "fixed;width:700px;">
+      <button class="button player" onclick="insert('P')">P</button>
+      <button class="button banker" onclick="insert('B')">B</button>
+      <button class="button tie" onclick="insert('T')">T</button>
+      <button class="button oo" onclick="undo()"><b>&lt;</b></button>
+      <button class="button oo" onclick="location.reload()">C</button>
+   
+    </div>
+    
+    <br>
+    <select class= "red" id="picklist" onchange="updateArray()">
+  <option value="PPB">เลือกแพทเทริน 
+  </option>
+
+       <option value="ANTI T">ANTI T</option> 
+      <option value="badboy">badboy</option>
+  <option value="4พยัคฆ์">4พยัคฆ์</option>
+  <option value="THE WINNER">THE WINNER</option>
+  <option value="PPB">PPB</option>
+  <option value="PBP">PBP</option>
+  <option value="PBB">PBB</option>
+  <option value="BBB">BBB</option>
+  <option value="BBP">BBP</option>
+  <option value="BPB">BPB</option>
+  <option value="BPP">BPP</option>
+  <option value="PPP">PPP</option>
+  <option value="BPBBPP">BPBBPP</option>
+  <option value="BBPBPPP">BBPBPPP</option>
+  <option value="PPBB">PPBB</option>
+  <option value="PBPBB">PBPBB</option>
+  
+    
+</select>
+    <br>
+    <div id="road3rtable">
+      <table style="table-layout: fixed;width:673px;" id="tblroad3r">
+        <colgroup>
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td id="road3r_1" valign="middle"></td>
+            <td id="road3r_4" valign="middle"></td>
+            <td id="road3r_7" valign="middle"></td>
+            <td id="road3r_10" valign="middle"></td>
+            <td id="road3r_13" valign="middle"></td>
+            <td id="road3r_16" valign="middle"></td>
+            <td id="road3r_19" valign="middle"></td>
+            <td id="road3r_22" valign="middle"></td>
+            <td id="road3r_25" valign="middle"></td>
+            <td id="road3r_28" valign="middle"></td>
+            <td id="road3r_31" valign="middle"></td>
+            <td id="road3r_34" valign="middle"></td>
+            <td id="road3r_37" valign="middle"></td>
+            <td id="road3r_40" valign="middle"></td>
+            <td id="road3r_43" valign="middle"></td>
+            <td id="road3r_46" valign="middle"></td>
+            <td id="road3r_49" valign="middle"></td>
+            <td id="road3r_52" valign="middle"></td>
+            <td id="road3r_55" valign="middle"></td>
+            <td id="road3r_58" valign="middle"></td>
+            <td id="road3r_61" valign="middle"></td>
+            <td id="road3r_64" valign="middle"></td>
+            <td id="road3r_67" valign="middle"></td>
+            <td id="road3r_70" valign="middle"></td>
+            <td id="road3r_73" valign="middle"></td>
+            <td id="road3r_76" valign="middle"></td>
+            <td id="road3r_79" valign="middle"></td>
+            <td id="road3r_82" valign="middle"></td>
+            <td id="road3r_85" valign="middle"></td>
+            <td id="road3r_88" valign="middle"></td>
+            <td id="road3r_91" valign="middle"></td>
+            <td id="road3r_94" valign="middle"></td>
+          </tr>
+          <tr>
+            <td id="road3r_2" valign="middle"></td>
+            <td id="road3r_5" valign="middle"></td>
+            <td id="road3r_8" valign="middle"></td>
+            <td id="road3r_11" valign="middle"></td>
+            <td id="road3r_14" valign="middle"></td>
+            <td id="road3r_17" valign="middle"></td>
+            <td id="road3r_20" valign="middle"></td>
+            <td id="road3r_23" valign="middle"></td>
+            <td id="road3r_26" valign="middle"></td>
+            <td id="road3r_29" valign="middle"></td>
+            <td id="road3r_32" valign="middle"></td>
+            <td id="road3r_35" valign="middle"></td>
+            <td id="road3r_38" valign="middle"></td>
+            <td id="road3r_41" valign="middle"></td>
+            <td id="road3r_44" valign="middle"></td>
+            <td id="road3r_47" valign="middle"></td>
+            <td id="road3r_50" valign="middle"></td>
+            <td id="road3r_53" valign="middle"></td>
+            <td id="road3r_56" valign="middle"></td>
+            <td id="road3r_59" valign="middle"></td>
+            <td id="road3r_62" valign="middle"></td>
+            <td id="road3r_65" valign="middle"></td>
+            <td id="road3r_68" valign="middle"></td>
+            <td id="road3r_71" valign="middle"></td>
+            <td id="road3r_74" valign="middle"></td>
+            <td id="road3r_77" valign="middle"></td>
+            <td id="road3r_80" valign="middle"></td>
+            <td id="road3r_83" valign="middle"></td>
+            <td id="road3r_86" valign="middle"></td>
+            <td id="road3r_89" valign="middle"></td>
+            <td id="road3r_92" valign="middle"></td>
+            <td id="road3r_95" valign="middle"></td>
+          </tr>
+          <tr>
+            <td id="road3r_3" valign="middle"></td>
+            <td id="road3r_6" valign="middle"></td>
+            <td id="road3r_9" valign="middle"></td>
+            <td id="road3r_12" valign="middle"></td>
+            <td id="road3r_15" valign="middle"></td>
+            <td id="road3r_18" valign="middle"></td>
+            <td id="road3r_21" valign="middle"></td>
+            <td id="road3r_24" valign="middle"></td>
+            <td id="road3r_27" valign="middle"></td>
+            <td id="road3r_30" valign="middle"></td>
+            <td id="road3r_33" valign="middle"></td>
+            <td id="road3r_36" valign="middle"></td>
+            <td id="road3r_39" valign="middle"></td>
+            <td id="road3r_42" valign="middle"></td>
+            <td id="road3r_45" valign="middle"></td>
+            <td id="road3r_48" valign="middle"></td>
+            <td id="road3r_51" valign="middle"></td>
+            <td id="road3r_54" valign="middle"></td>
+            <td id="road3r_57" valign="middle"></td>
+            <td id="road3r_60" valign="middle"></td>
+            <td id="road3r_63" valign="middle"></td>
+            <td id="road3r_66" valign="middle"></td>
+            <td id="road3r_69" valign="middle"></td>
+            <td id="road3r_72" valign="middle"></td>
+            <td id="road3r_75" valign="middle"></td>
+            <td id="road3r_78" valign="middle"></td>
+            <td id="road3r_81" valign="middle"></td>
+            <td id="road3r_84" valign="middle"></td>
+            <td id="road3r_87" valign="middle"></td>
+            <td id="road3r_90" valign="middle"></td>
+            <td id="road3r_93" valign="middle"></td>
+            <td id="road3r_96" valign="middle"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+    <div id="road3table">
+
+        <table style="table-layout: fixed;width:480px;" id="tblroad3">
+        <colgroup>
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          <col width="13">
+          
+        </colgroup>
+        <tbody>  
+
+<tr>
+            <td id="road4_1" valign="middle"></td>
+      <td id="road4_5" valign="middle"></td>
+  <td id="road4_9" valign="middle"></td>
+      <td id="road4_13" valign="middle"></td>
+      <td id="road4_17" valign="middle"></td>
+      <td id="road4_21" valign="middle"></td>
+      <td id="road4_25" valign="middle"></td>
+      <td id="road4_29" valign="middle"></td>
+      <td id="road4_33" valign="middle"></td>
+      <td id="road4_37" valign="middle"></td>
+      <td id="road4_41" valign="middle"></td>
+      <td id="road4_45" valign="middle"></td>
+      <td id="road4_49" valign="middle"></td>
+      <td id="road4_53" valign="middle"></td>
+      <td id="road4_57" valign="middle"></td>
+      <td id="road4_61" valign="middle"></td>
+      <td id="road4_65" valign="middle"></td>
+      <td id="road4_69" valign="middle"></td>
+      <td id="road4_73" valign="middle"></td>
+      <td id="road4_77" valign="middle"></td>
+      <td id="road4_81" valign="middle"></td>
+</tr>
+<tr>
+      <td id="road4_2" valign="middle"></td>
+      <td id="road4_6" valign="middle"></td>
+      <td id="road4_10" valign="middle"></td>
+      <td id="road4_14" valign="middle"></td>
+      <td id="road4_18" valign="middle"></td>
+      <td id="road4_22" valign="middle"></td>
+      <td id="road4_26" valign="middle"></td>
+      <td id="road4_30" valign="middle"></td>
+      <td id="road4_34" valign="middle"></td>
+      <td id="road4_38" valign="middle"></td>
+      <td id="road4_42" valign="middle"></td>
+      <td id="road4_46" valign="middle"></td>
+      <td id="road4_50" valign="middle"></td>
+      <td id="road4_54" valign="middle"></td>
+      <td id="road4_58" valign="middle"></td>
+      <td id="road4_62" valign="middle"></td>
+      <td id="road4_66" valign="middle"></td>
+      <td id="road4_70" valign="middle"></td>
+      <td id="road4_74" valign="middle"></td>
+      <td id="road4_78" valign="middle"></td>
+      <td id="road4_82" valign="middle"></td>
+</tr>
+
+
+
+<tr>
+      
+      <td id="road4_3" valign="middle"></td>
+      <td id="road4_7" valign="middle"></td>
+      <td id="road4_11" valign="middle"></td>
+      <td id="road4_15" valign="middle"></td>
+      <td id="road4_19" valign="middle"></td>
+      <td id="road4_23" valign="middle"></td>
+      <td id="road4_27" valign="middle"></td>
+      <td id="road4_31" valign="middle"></td>
+      <td id="road4_35" valign="middle"></td>
+      <td id="road4_39" valign="middle"></td>
+      <td id="road4_43" valign="middle"></td>
+      <td id="road4_47" valign="middle"></td>
+      <td id="road4_51" valign="middle"></td>
+      <td id="road4_55" valign="middle"></td>
+      <td id="road4_59" valign="middle"></td>
+      <td id="road4_63" valign="middle"></td>
+      <td id="road4_67" valign="middle"></td>
+      <td id="road4_71" valign="middle"></td>
+      <td id="road4_75" valign="middle"></td>
+      <td id="road4_79" valign="middle"></td>
+      <td id="road4_83" valign="middle"></td>
+</tr>
+<tr>
+      <td id="road4_4" valign="middle"></td>
+      <td id="road4_8" valign="middle"></td>
+      <td id="road4_12" valign="middle"></td>
+      <td id="road4_16" valign="middle"></td>
+      <td id="road4_20" valign="middle"></td>
+      <td id="road4_24" valign="middle"></td>
+ <td id="road4_28" valign="middle"></td>
+      <td id="road4_32" valign="middle"></td>
+      <td id="road4_36" valign="middle"></td>
+      <td id="road4_40" valign="middle"></td>
+      <td id="road4_44" valign="middle"></td>
+      <td id="road4_48" valign="middle"></td>
+      <td id="road4_52" valign="middle"></td>
+      <td id="road4_56" valign="middle"></td>
+      <td id="road4_60" valign="middle"></td>
+      <td id="road4_64" valign="middle"></td>
+      <td id="road4_68" valign="middle"></td>
+      <td id="road4_72" valign="middle"></td>
+      <td id="road4_76" valign="middle"></td>
+      <td id="road4_80" valign="middle"></td>
+      <td id="road4_84" valign="middle"></td>
+</tr>
+</tbody>
+      </table>
+
+    </div>
+
+<br>
+<canvas id="myChart" aria-label="chart" height="350" width="580"></canvas>
+    
+    <br>
+
+
+<br>
+
+<div  >
+  
+
+    <div >วิธีใช้งาน</div>
+    <div >1.กดเลือกแพทเทรินตัวแทงที่ต้องการเล่น</div>
+    <div >2.จดสกอร์เหมือนเค้าฮ่องกง</div>
+    <div>3.ตัวแทงตาถัดไปแสดงเป็นข้อความอยู่ระหว่างสกอร์และปุ่มกด</div>
+   
+<div>4. 4พยัคฆ์ ตัวแทงจะเริ่มเมื่อกดสกอร์ครบ 5 เปิด</div>
+    <div>ุ5. ANTI T ตัวแทงจะเริ่มเมื่อกดสกอร์ครบ 3 เปิด</div>
+<br>
+  <div> 🏆🏆เล่นเองไม่เคยบวก ลองไปตามเด็กดื้อใน LINE ได้นะครับ  @line id 📢 badboyline  💥💥
+  </div>
+<br>
+ <h3>  เวปสูตรอื่นๆ</h3>
+
+<a href="https://badoyweb-2.web.app/" >ตามสวนไม้ขีด</a><br>
+<a href="https://pat-by-badboy.web.app/" >ใส่แพททเทรินเอง</a><br>
+<a href="https://badboyweb1-c782a.firebaseapp.com/" >DNA ผีบอก </a><br>
+<a href="https://pracha-sd.web.app/" >ทริค  PRACHA</a><br>
+<a href="https://technicianlab-lt.blogspot.com/2018/07/dna.html" >นายหัว</a><br>
+<a href="https://trickpeeau.web.app/" >ทริคจดแต้มพี่อู๋</a><br>
+<a href="https://trickjai-app.web.app/" >ทริคจดแต้ม ใจ</a><br>
+<a href="10pat.html" >10 PAT BY TIGER</a><br>
+<a href="yeegee.html" >YEEGEE Lotto432</a><br>
+
+  <br>
+  <a href="https://web.facebook.com/profile.php?id=100013158332423" > ☕ 🍕 🍜ติดต่อใหกำลังใจคนทำ 🍺 👉👉 เด็กดื้อต้องตี  😊😊
+    </a>
+	<br>
+  
+<a href="https://www.lotto77.in/affliate/TFQ3NzEwMDMzNTE1"><img style= "fixed;width:500px;"src="pic/77LOTTO.gif"></a><br>
+<a href="https://lotto432.tv/affliate/TFQ0MzIxMDAxNjQzOA=="><img style= "fixed;width:500px;"src="pic/lotto432.gif"></a><br>
+</div>
+
+
+
+    
+  </div>
+
+
+
+  </div>
+  </div>
+<BR>
+ 
+
+  <br>
+  <br>
+  <div></div>
+  
+  <br>
+  <br>
+  
+</body>
+
+
+
+
+
+<script src="../cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+
+
+<script>
+  var pbarray = [];
+var pbtarray = [];
+var playerbead = '<div class="score p"><div>P</div></div>';
+var bankerbead = '<div class="score b"><div>B</div></div>';
+var tiebead = '<div class="score t"><div>T</div></div>';
+var win = '<div class="winlose win"><div>&#10003;</div></div>';
+var lose = '<div class="winlose lose"><div>&#10007;</div></div>';
+var blank = '<div class="winlose"><div>-</div></div>';
+var pbstep1 = [];
+var pbstep2 = [];
+var pbstep3 = [];
+var pbstep4 = [];
+var pbwl = [];
+var pbwls = [];
+var betstep=[];
+var betsd=[]
+var betantit=[]
+var dataValues = []
+var backgroundColors = [];
+var dataV = []
+var databac=[]
+
+function chat(){
+dataValues = [0]
+databac=['black']
+for (i = 1; i <= dataV.length; i++) {
+
+if(dataV[i-1]=== 1 ){
+dataValues.push(dataValues[i-1]+1)
+databac.push('#00CA14')
+
+}
+else
+if (dataV[i-1]!== 1 ){
+dataValues.push(dataValues[i-1]-1)
+databac.push('#FF0404')
+ console.log(databac)
+  }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var ctx = document.getElementById('myChart').getContext('2d');
+        var chartInstance;
+
+        
+        createChart();
+
+        function createChart() {
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65],
+                    datasets: [{
+                        label: 'BY BADBOY',
+                        data: [],
+                        backgroundColor: [                    
+                        ],
+                        borderColor: [
+                            
+                        ],
+                        borderWidth: 1,
+                        pointRadius: 4,
+                    }]
+                },
+                 options: {
+               responsive: false,
+               plugins: {
+                  legend: {
+                     display: true,
+                     position: 'bottom',
+                     align: 'center',
+                     labels: {
+                        color: 'darkred',
+                        font: {
+                           weight: 'bold'
+                        },
+                     }
+                  }
+               },
+			   
+			   scales: {
+                y: {
+                    min: -15,
+                    max: 15
+                }
+            }
+				   
+			   
+			   
+            }
+            });
+        }
+
+        function updateChart() {
+           
+            var newData = dataValues;
+			var newback= databac;
+                   
+            chartInstance.data.datasets[0].data = newData;
+			chartInstance.data.datasets[0].backgroundColor = newback;
+            chartInstance.update();
+        }
+function addData() {
+    
+    
+	 var toolTip = new Chart(chartTooltip, {
+
+ 
+    type: "line",
+    data: {
+        labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,],
+        datasets: [{
+            label: "BY BADBOY",
+            data: dataValues,
+            backgroundColor: backgroundColors,
+            borderColor: ["black"],
+            borderWidth: 1,
+            pointRadius: 5,
+        }],
+    },
+    options: {
+        responsive: false,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'bottom',
+                align: 'center',
+                labels: {
+                    color: 'darkred',
+                    font: {
+                        weight: 'bold'
+                    },
+                }
+            }
+        }
+    }
+});
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function updateArray() {
+  var picklist = document.getElementById("picklist");
+  var value = picklist.value
+  betstep=[];
+  
+  if (value === "PPB") {
+    while (betstep.length < 90) {
+      betstep.push("P");
+      betstep.push("P");
+      betstep.push("B");
+    }
+  }
+  else
+  if (value === "PPP") {
+    while (betstep.length < 90) {
+      betstep.push("P");
+      betstep.push("P");
+      betstep.push("P");
+    }
+  }
+else
+  if (value === "PBB") {
+    while (betstep.length < 90) {
+      betstep.push("P");
+      betstep.push("B");
+      betstep.push("B");
+    }
+  }
+else
+  if (value === "PBP") {
+    while (betstep.length < 90) {
+      betstep.push("P");
+      betstep.push("B");
+      betstep.push("P");
+    }
+  }
+else
+  if (value === "BBB") {
+    while (betstep.length < 90) {
+      betstep.push("B");
+      betstep.push("B");
+      betstep.push("B");
+    }
+  }
+else
+  if (value === "BBP") {
+    while (betstep.length < 90) {
+      betstep.push("B");
+      betstep.push("B");
+      betstep.push("P");
+    }
+  }
+else
+  if (value === "BPB") {
+    while (betstep.length < 90) {
+      betstep.push("B");
+      betstep.push("P");
+      betstep.push("B");
+    }
+  }
+else
+  if (value === "BPP") {
+    while (betstep.length < 90) {
+      betstep.push("B");
+      betstep.push("P");
+      betstep.push("P");
+    }
+  }
+else
+  if (value === "BPBBPP") {
+    while (betstep.length < 90) {
+      betstep.push("B");
+      betstep.push("P");
+      betstep.push("B");
+      betstep.push("B");
+      betstep.push("P");
+      betstep.push("P");
+    }
+  }
+  else
+  if (value === "PPBB") {
+    while (betstep.length < 90) {
+      betstep.push("P");
+      betstep.push("P");
+      betstep.push("B");
+      betstep.push("B");
+      
+    }
+  }
+    else
+  if (value === "PBPBB") {
+    while (betstep.length < 90) {
+      betstep.push("P");
+      betstep.push("B");
+      betstep.push("P");
+      betstep.push("B");
+      betstep.push("B");
+    }
+  }
+  else
+  if (value === "badboy") {
+    
+      betstep=betsd
+      
+    
+  }
+else
+if (value === "ANTI T") {
+    
+      betstep=betantit
+      
+    
+  }
+else
+    
+  if (value === "4พยัคฆ์") {
+while (betstep.length < 90) {
+      betstep.push(pbarray[0]);
+      betstep.push(pbarray[1]);
+      betstep.push(pbarray[2]);
+      betstep.push(pbarray[3]);
+    }
+  }
+else
+  if (value === "BBPBPPP") {
+    while (betstep.length < 90) {
+      betstep.push("B");
+      betstep.push("B");
+      betstep.push("P");
+      betstep.push("B");
+      betstep.push("P");
+      betstep.push("P");
+      betstep.push("P");
+    }
+  }
+  else
+  if (value === "THE WINNER") {
+    while (betstep.length < 90) {
+      betstep.push("B");
+betstep.push("P");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("P");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("B");
+betstep.push("B");
+betstep.push("B");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("P");
+betstep.push("P");
+betstep.push("P");
+betstep.push("P");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("P");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("P");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("P");
+betstep.push("B");
+betstep.push("B");
+	  
+    }
+  }
+ 
+ insert("C")
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function loadtable(icols,irows,namerow){
+var table = "";
+var cols = icols;
+var rows = irows;
+var ii = 0;
+
+for(iii = 0;iii<cols;iii++){
+table = table + "<col width=\"13\">"
+}
+
+for(r=0;r<rows;r++){
+table += "<tr>";
+   for(c=0;c<cols;c++){
+   table += "<td id=\"" + namerow +"_"+ + ((r+1)+(c*(rows))) + "\" valign=\"middle\">" + "" + "</td>";
+   ii++;
+
+   }
+table += "</tr>";
+}
+
+//document.body.innerHTML = (document.body.innerHTML + "<table id=\"" + "tbl" + namerow + "\">"  + table + "</table><br>");
+ document.getElementById(namerow+"table").innerHTML = "<table style=\"table-layout: fixed;width:673px;\" id=\"" + "tbl" + namerow + "\">"  + table + "</table><br>";
+}
+
+
+function undo(){
+for( i = 1 ; i <= pbtarray.length ; i++ ){
+document.getElementById("beadroad_"+i).innerHTML = "";
+}
+for( i = 1 ; i <= pbarray.length ; i++ ){
+document.getElementById("road3r_"+i).innerHTML = "";
+document.getElementById("road4_"+ (i)).innerHTML = "";
+if( pbarray.length == 1 ){ document.getElementById("road4_"+ (1) ).innerHTML = ""; }
+}
+
+if( pbtarray[pbtarray.length-1] === "T" ){
+ pbtarray.pop();
+}else{
+ pbtarray.pop();
+ pbarray.pop();
+ pbstep1.pop();
+ pbstep2.pop();
+}
+
+
+insert("C");
+}
+
+
+
+
+
+
+
+
+function insert(bet){
+if(pbtarray.length < (16*6)){
+if(bet != "C"){
+pbtarray.push(bet);
+if( bet != "T" ){
+ pbarray.push(bet);
+}
+}
+//console.log(pbtarray);
+for( i = 1 ; i <= pbtarray.length ; i++ ){
+switch (pbtarray[i-1]) {
+case "P":
+ document.getElementById("beadroad_"+i).innerHTML = playerbead;
+ break;
+case "B":
+ document.getElementById("beadroad_"+i).innerHTML = bankerbead;
+ break;
+case "T":
+ document.getElementById("beadroad_"+i).innerHTML = tiebead;
+ break;
+}
+}
+
+
+pbwl = ["-"];
+pbwls = [];
+dataV=[]
+for( i = 1 ; i <= pbarray.length ; i++ ){
+
+
+if( i >= 1 ){
+ if( pbarray[i-1] == betstep[i-1] )
+ { pbwl.push(win); 
+ dataV.push(1)
+ }
+ else
+ 
+ 
+ { pbwl.push(lose); 
+ dataV.push(-1)
+ }
+}
+if( i == 1 ){
+betsd[1]=pbarray[0];
+betsd[2]=pbarray[0];
+betsd[3]=pbarray[1];
+betsd[4]=pbarray[0];
+betsd[5]=pbarray[2];
+betsd[6]=pbarray[0];
+betsd[7]=pbarray[2];
+betsd[8]=pbarray[3];
+betsd[9]=pbarray[2];
+betsd[10]=pbarray[3];
+betsd[11]=pbarray[8];
+betsd[12]=pbarray[3];
+betsd[13]=pbarray[8];
+betsd[14]=pbarray[9];
+betsd[15]=pbarray[8];
+betsd[16]=pbarray[9];
+betsd[17]=pbarray[14];
+betsd[18]=pbarray[9];
+betsd[19]=pbarray[14];
+betsd[20]=pbarray[15];
+betsd[21]=pbarray[14];
+betsd[22]=pbarray[15];
+betsd[23]=pbarray[20];
+betsd[24]=pbarray[15];
+betsd[25]=pbarray[20];
+betsd[26]=pbarray[21];
+betsd[27]=pbarray[20];
+betsd[28]=pbarray[21];
+betsd[29]=pbarray[26];
+betsd[30]=pbarray[21];
+betsd[31]=pbarray[26];
+betsd[32]=pbarray[27];
+betsd[33]=pbarray[26];
+betsd[34]=pbarray[27];
+betsd[35]=pbarray[32];
+betsd[36]=pbarray[27];
+betsd[37]=pbarray[32];
+betsd[38]=pbarray[33];
+betsd[39]=pbarray[32];
+betsd[40]=pbarray[33];
+betsd[41]=pbarray[38];
+betsd[42]=pbarray[33];
+betsd[43]=pbarray[38];
+betsd[44]=pbarray[39];
+betsd[45]=pbarray[38];
+betsd[46]=pbarray[39];
+betsd[47]=pbarray[44];
+betsd[48]=pbarray[39];
+betsd[49]=pbarray[44];
+betsd[50]=pbarray[45];
+betsd[51]=pbarray[44];
+betsd[52]=pbarray[45];
+betsd[53]=pbarray[50];
+betsd[54]=pbarray[45];
+betsd[55]=pbarray[50];
+betsd[56]=pbarray[51];
+betsd[57]=pbarray[50];
+betsd[58]=pbarray[51];
+betsd[59]=pbarray[56];
+betsd[60]=pbarray[51];
+betsd[61]=pbarray[56];
+betsd[62]=pbarray[57];
+betsd[63]=pbarray[56];
+betsd[64]=pbarray[57];
+betsd[65]=pbarray[62];
+betsd[66]=pbarray[57];
+betsd[67]=pbarray[62];
+betsd[68]=pbarray[63];
+betsd[69]=pbarray[62];
+betsd[70]=pbarray[63];
+betsd[71]=pbarray[68];
+betsd[72]=pbarray[63];
+betsd[73]=pbarray[68];
+betsd[74]=pbarray[69];
+betsd[75]=pbarray[68];
+betsd[76]=pbarray[69];
+betsd[77]=pbarray[74];
+betsd[78]=pbarray[69];
+betsd[79]=pbarray[74];
+betsd[80]=pbarray[79];
+
+
+}
+if(i>=3){
+  if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="PPP"){
+    betantit[i]="P"
+  }
+else
+
+  if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="PPB"){
+    betantit[i]="B"
+  }
+else
+
+  if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="PBP"){
+    betantit[i]="B"
+  }
+else
+
+  if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="PBB"){
+    betantit[i]="P"
+  }
+else
+
+  if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="BBP"){
+    betantit[i]="P"
+  }
+else
+if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="BBB"){
+    betantit[i]="B"
+  }
+  else
+  
+  if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="BPB"){
+    betantit[i]="P"
+  }
+else
+if(pbarray[i-3]+pbarray[i-2]+pbarray[i-1]=="BPP"){
+    betantit[i]="B"
+  }
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+if( i == 1 ){ document.getElementById("road3r_"+ (1) ).innerHTML = pbwl[0]; }
+ document.getElementById("road3r_"+ (i) ).innerHTML = pbwl[i];
+ document.getElementById("road4_"+ (i) ).innerHTML = pbwl[i];
+}
+//console.log(pbstep1);
+
+
+
+
+
+ let WCount = pbwl.filter(result => result === win).length;
+let LCount = pbwl.filter(result => result === lose).length;
+let totalCount = WCount+LCount
+let percentageW = Math.floor(WCount / totalCount * 100);
+
+
+
+if( betstep[i-1] == 'P' ){
+pbbetting = '<img style= "fixed;width:100px;"src="pic/sp.png"></img> <font size="6" color="blue"> ' + percentageW + '% </font>';
+}else if( betstep[i-1] == 'B' ){
+ pbbetting = '<img style= "fixed;width:100px;"src="pic/sb.png"></img> <font size="6" color="red"> '+ percentageW +'% </font>';
+}else{
+ pbbetting = '<font size="6" color="white">-</font>';
+}
+document.getElementById("betting").innerHTML = pbbetting;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+chat()
+updateChart()
+
+
+}
+
+//console.log(betstep[betstep.length]);
+
+function add(a, b) {
+    return a + b;
+}
+
+
+</script>
+
+
+
+
+<!-- Mirrored from pbb-by-badboy.web.app/GET by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 May 2024 17:43:20 GMT -->
+</html>
